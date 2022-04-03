@@ -1,0 +1,23 @@
+@import "./../../../assets/color";
+.footer {
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+  background-color: $darkBlue;
+  @media screen and (max-width: 600px) {
+    height: auto;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 100%;
+    }
+  }
+  .end {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,7 @@
+@import "./../../../assets/color";
+.navbar {
+  width: 100%;
+  box-shadow: rgba($darkBlue, 0.25) 0px 2px 5px -1px,
+    rgba($darkBlue, 0.3) 0px 1px 3px -1px;
+  min-height: 10vh;
+}

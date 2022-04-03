@@ -1,0 +1,19 @@
+@import "./../../../assets/color";
+.drop-down {
+  width: 10rem;
+  background-color: $white;
+  .item {
+    &:hover{
+      background-color: $light;
+    }
+    a {
+      font-weight: 400 !important;
+      font-size: 0.9rem;
+      display: block;
+      transition: .3s;
+      &:hover{
+          transform: translateX(-5%);
+      }
+    }
+  }
+}

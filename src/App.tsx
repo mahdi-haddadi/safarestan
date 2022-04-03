@@ -1,13 +1,13 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./screens/Home";
 const App = () => {
   return (
-    <Fragment>
+    <div className="app" style={{ maxWidth: "1440px", margin: "auto " }}>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-    </Fragment>
+    </div>
   );
 };
 

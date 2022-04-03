@@ -1,0 +1,19 @@
+@import "./../../../assets/color";
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .list {
+    margin-top: 20px;
+    .item {
+      a {
+        color: $light;
+        font-size: 0.9rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

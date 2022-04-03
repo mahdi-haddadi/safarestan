@@ -1,0 +1,12 @@
+.nav {
+  position: relative;
+  .p-drop-down {
+    position: relative;
+  }
+  .drop-down {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 20px;
+  }
+}

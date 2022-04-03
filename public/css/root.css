@@ -350,7 +350,7 @@ ul {
 a {
   text-decoration: none;
   font-family: vazir;
-  color: #fff;
+  color: #000;
 }
 /* hr */
 hr {
@@ -364,4 +364,11 @@ hr {
 }
 .pos-absolute {
   position: absolute;
+}
+/* text color */
+.text-light {
+  color: #f8f9fa;
+}
+.text-dark {
+  color: #343a40;
 }
