@@ -2,6 +2,9 @@
 .drop-down {
   width: 10rem;
   background-color: $white;
+  position: absolute;
+  right: 0;
+  top: 100%;
   .item {
     &:hover{
       background-color: $light;
@@ -15,5 +18,10 @@
           transform: translateX(-5%);
       }
     }
+  }
+  @media screen and (max-width:768px) {
+    position: unset;
+    display: block;
+    width: 100%;
   }
 }

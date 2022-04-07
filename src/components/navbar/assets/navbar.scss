@@ -1,7 +1,53 @@
 @import "./../../../assets/color";
 .navbar {
   width: 100%;
-  box-shadow: rgba($darkBlue, 0.25) 0px 2px 5px -1px,
-    rgba($darkBlue, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba($darkBlue, 0.35) 0px 2px 10px -1px,
+    rgba($darkBlue, 0.4) 0px 1px 6px -1px;
   min-height: 10vh;
+  background-color: transparent;
+  @media screen and (max-width: 769px) {
+    & {
+      flex-direction: column;
+      min-height: 20vh;
+      justify-content: space-evenly;
+    }
+    .header-navbar {
+      .menu {
+        order: 1 !important;
+      }
+      .logo {
+        order: 2 !important;
+      }
+      .__user {
+        order: 3 !important;
+      }
+    }
+  }
+  .footer-navbar {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    .search {
+      position: relative;
+      .ico {
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-30%);
+      }
+      input {
+        width: 15rem;
+        background-color: rgba($color: $dark, $alpha: 0.5);
+        padding: 10px 30px 10px 10px;
+        color: $light;
+        border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        &::placeholder {
+          color: $light;
+          font-family: vazir;
+          font-size: 0.7rem;
+        }
+      }
+      margin: auto;
+    }
+  }
 }

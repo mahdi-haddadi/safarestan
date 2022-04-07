@@ -1,0 +1,18 @@
+@import "./../../assets/color";
+.btn {
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: $blue;
+  color: $white;
+  cursor: pointer;
+  transition: 0.2s;
+  @media screen and (max-width:600px) {
+    padding: 10px 20px;
+    font-size: .8rem;
+  }
+  &:focus,
+  &:hover {
+    box-shadow: rgba($color: $blue, $alpha: 1) 0px 5px 15px;
+  }
+}

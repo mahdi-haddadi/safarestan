@@ -3,10 +3,37 @@
   .p-drop-down {
     position: relative;
   }
-  .drop-down {
-    position: absolute;
-    right: 0;
-    top: 100%;
-    margin-top: 20px;
+}
+.nav.menu-responsiv {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  transition: 0.5s;
+  ul {
+    flex-direction: column;
+    & > li {
+      margin: 0 20px !important;
+    }
   }
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+    .p-drop-down {
+      flex-direction: column;
+      align-items: flex-start;
+      .item{
+        .icon-drop-down{
+          order: 1;
+        }
+      }
+    }
+  }
+}
+.nav.menu-responsiv.active {
+  right: 0;
 }
