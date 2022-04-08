@@ -20,6 +20,15 @@ body {
   overflow-x: hidden;
   font-family: yakan;
 }
+body::-webkit-scrollbar{
+  background-color: transparent;
+  width: 5px;
+  padding: 0 1px;
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #bdc3c7;
+}
 .d-flex {
   display: flex;
 }

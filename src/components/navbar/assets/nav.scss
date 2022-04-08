@@ -1,4 +1,13 @@
 .nav {
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+    padding: 0 1px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #bdc3c7;
+  }
   position: relative;
   .p-drop-down {
     position: relative;
@@ -26,8 +35,8 @@
     .p-drop-down {
       flex-direction: column;
       align-items: flex-start;
-      .item{
-        .icon-drop-down{
+      .item {
+        .icon-drop-down {
           order: 1;
         }
       }
