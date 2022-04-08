@@ -1,0 +1,37 @@
+@import "./../../../assets/color";
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 769px) {
+    height: 80vh;
+  }
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("./../../../../public/images/shahr.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-origin: content-box, content-box;
+  }
+  .content {
+    margin-bottom: 100px !important;
+    h2 {
+      @media screen and(max-width:600px) {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: 769px) and (min-width: 601px) {
+        font-size: 1.7rem;
+      }
+      font-size: 3rem;
+      font-family: vazir;
+    }
+  }
+}
