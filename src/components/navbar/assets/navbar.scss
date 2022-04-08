@@ -5,9 +5,9 @@
     rgba($darkBlue, 0.4) 0px 1px 6px -1px;
   min-height: 10vh;
   background-color: transparent;
+  flex-direction: column;
   @media screen and (max-width: 769px) {
     & {
-      flex-direction: column;
       min-height: 20vh;
       justify-content: space-evenly;
     }
@@ -26,8 +26,10 @@
   .footer-navbar {
     display: grid;
     grid-template-columns: 70% 30%;
+    margin: 20px 0 0 0;
     .search {
       position: relative;
+      width: 100%;
       .ico {
         position: absolute;
         right: 0.5rem;
@@ -35,7 +37,7 @@
         transform: translateY(-30%);
       }
       input {
-        width: 15rem;
+        width: 100%;
         background-color: rgba($color: $dark, $alpha: 0.5);
         padding: 10px 30px 10px 10px;
         color: $light;
@@ -48,6 +50,14 @@
         }
       }
       margin: auto;
+    }
+    .question {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (min-width: 600px) {
+        justify-content: end;
+      }
     }
   }
 }
